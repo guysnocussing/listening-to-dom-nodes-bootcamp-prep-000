@@ -40,10 +40,15 @@
   </body>
   <script>
     let divs = document.querySelectorAll('div');
+    const input = document.querySelector('input');
+
+    input.addEventListener('keydown', function(e) {
+      alert(e.which);
+    })
 
     function capture(e) {
       e.stopPropagation();
-      
+
       alert(this.firstChild.nodeValue.trim() + ' captured');
     }
 
