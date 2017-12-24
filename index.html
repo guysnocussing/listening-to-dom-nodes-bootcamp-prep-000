@@ -9,17 +9,6 @@
        min-height: 12px;
      }
     </style>
-    <script>
-      let divs = document.querySelectorAll('div');
-
-      function capture(e) {
-        alert(this.firstChild.nodeValue.trim() + ' captured');
-      }
-
-      for (let i = 0; i < divs.length; i++) {
-        divs[i].addEventListener('click', capture, true);
-      }
-    </script>
   </head>
 
   <body>
