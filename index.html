@@ -42,6 +42,8 @@
     let divs = document.querySelectorAll('div');
 
     function capture(e) {
+      e.stopPropagation();
+      
       alert(this.firstChild.nodeValue.trim() + ' captured');
     }
 
